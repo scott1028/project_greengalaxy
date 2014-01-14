@@ -2,56 +2,54 @@
 
 本文使用 RDOC 參考：http://en.wikipedia.org/wiki/Ruby_Document_format
 
-= SYNOPSIS
-	主體布局 CSS 分為四種
-
-		div.rowcontainer
-			div.threequartercolumn
-				h3
-					p
-			div.onequartercolumn
-				h3
-					p
-
-		div.rowcontainer
-			div.halfcolumn
-				h3
-					p
-			div.halfcolumn
-				h3
-					p
-
-		div.rowcontainer
-			div.onethirdcolumn
-				h3
-					p
-			div.onethirdcolumn
-				h3
-					p
-			div.onethirdcolumn
-				h3
-					p
-
-		div.rowcontainer
-			div.onequartercolumn
-				h3
-					p
-			div.onequartercolumn
-				h3
-					p
-			div.onequartercolumn
-				h3
-					p
-			div.onequartercolumn
-				h3
-					p
-
-	導覽列
-		<li><a href="" class="current">首頁</a></li>
-		<li><a href="">關於我們</a></li>
-		<li><a href="">產品型錄</a></li>
-		<li><a href="">連絡我們</a></li>
-= END
+ 主體布局 CSS 分為四種
+ 
+ 	div.rowcontainer
+ 		div.threequartercolumn
+ 			h3
+ 				p
+ 		div.onequartercolumn
+ 			h3
+ 				p
+ 
+ 	div.rowcontainer
+ 		div.halfcolumn
+ 			h3
+ 				p
+ 		div.halfcolumn
+ 			h3
+ 				p
+ 
+ 	div.rowcontainer
+ 		div.onethirdcolumn
+ 			h3
+ 				p
+ 		div.onethirdcolumn
+ 			h3
+ 				p
+ 		div.onethirdcolumn
+ 			h3
+ 				p
+ 
+ 	div.rowcontainer
+ 		div.onequartercolumn
+ 			h3
+ 				p
+ 		div.onequartercolumn
+ 			h3
+ 				p
+ 		div.onequartercolumn
+ 			h3
+ 				p
+ 		div.onequartercolumn
+ 			h3
+ 				p
+ 
+ 導覽列
+ 	<li><a href="" class="current">首頁</a></li>
+ 	<li><a href="">關於我們</a></li>
+ 	<li><a href="">產品型錄</a></li>
+ 	<li><a href="">連絡我們</a></li>
 
 Things you may want to cover:
 
