@@ -1,5 +1,6 @@
 == README
 
+<code>
 主體布局 CSS 分為四種
 
 	div.rowcontainer
@@ -48,7 +49,7 @@
 	<li><a href="">關於我們</a></li>
 	<li><a href="">產品型錄</a></li>
 	<li><a href="">連絡我們</a></li>
-
+</code>
 
 Things you may want to cover:
 
