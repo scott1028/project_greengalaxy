@@ -95,3 +95,14 @@ ul#nav li a.current:hover {background: #CCFF00; color: #00CCFF}
 .onethirdcolumn {float: left; width: 33%; }		/* One third width column for a three column site */
 
 .onequartercolumn {float: left; width: 24.5% }		/* One quarter width column for a four column site */
+
+.threequartercolumn:hover:not(.news), .halfcolumn:hover, .onethirdcolumn:hover, .onequartercolumn:hover:not(.news) {
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    background: #555
+}
+
+a:hover {
+    text-decoration: none !important;
+}
