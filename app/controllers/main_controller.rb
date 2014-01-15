@@ -1,4 +1,4 @@
-class HomeController < ApplicationController
+class MainController < ApplicationController
   def index
     @siteMessages=SiteMessage.order('created_at desc').limit(10)
   end

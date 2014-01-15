@@ -1,11 +1,10 @@
 Greengalaxy::Application.routes.draw do
-  
-  
+
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
   devise_for :users
   
-  get "home/index"
-  get "home/getSiteMessageByID"
+  get "main/index"
+  get "main/getSiteMessageByID"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
