@@ -1,7 +1,7 @@
 /* A fluid template for business or fun */
 /* By Dave Reeder, www.davereederdesign.com */
 
-body { margin: 0; padding: 0; background: #111; }
+body { margin: auto; padding: 0; background: #111;max-width: 1024px; }
 
 * {margin: 0; padding: 0; border: 0; font-family: Verdana, Arial, sans-serif; }
 
@@ -10,14 +10,15 @@ body { margin: 0; padding: 0; background: #111; }
 
 p, h1, h2, h3, span#copyright { margin: 0 10px; color: #fff; font-weight: normal}
 h1, h2, h3, h4 {margin-top: 5px; color: #CCFF00; font-style: italic}
+h2 { font-style: normal; }
 
 p { font-size: 0.75em; line-height: 1.6em; text-align: justify }
 h1 {float: left; font-style: italic; margin-top: 40px; margin-left: 30px; font-size: 1.75em; line-height: 1.75em; letter-spacing: 0.20em}	/* site heading */
 h1 a {color: #333; text-decoration: none}
 h1 a:hover {color: #333; text-decoration: underline}
 
-h2 { font-size: 1.30em; line-height: 2.40em }	/* site heading */
-h3 { font-size: 0.90em; line-height: 1.60em }				/* sub headings */
+h2 { font-size: 1.30em; line-height: 2.40em; font-weight: bold; }	/* site heading */
+h3 { font-size: 1.10em; line-height: 1.60em; font-weight: bold; }				/* sub headings */
 span#copyright { font-size: 13px; line-height: 35px; color: #000 }
 
 div { padding: 10px 0;}

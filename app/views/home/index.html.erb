@@ -21,25 +21,51 @@
 <!-- ****************** BEGIN ONE COLUMN SECTION ****************** -->
 
 <div class="rowcontainer"><!-- for a row of columns, use a rowcontainer -->
-<h2>The Second Incarnation...</h2>
-	<div class="threequartercolumn">
-		<h3>The new Fluidity</h3>
-		<p>Welcome to Fluidity 2, a template created by <a href="http://www.davereederdesign.com/" title="davereederdesign">davereederdesign</a>.  
-		<br />
-		This is actually version 2 of my original <a href="http://www.oswd.org/design/preview/id/2540"  title="fluidity">fluidity</a> template and features some improvements and tweaks.  <br />
-		I received a lot of emails after releasing Fluidity, it seemed very popular.  So, with this version I've tried to take the good points but expand on the original a little and make it easier to use.		
-		</p>
+<h2>最新消息</h2>
+	<div class="threequartercolumn onShowSiteMessage">
+      <% @siteMessages.limit(1).each do |row| %>
+        <h3><%= row.title %></h3>
+        <p><%= row.content %></p>
+      <% end %>
+		<!--<h3>The new Fluidity</h3>-->
+		<!--<p>Welcome to Fluidity 2, a template created by <a href="http://www.davereederdesign.com/" title="davereederdesign">davereederdesign</a>.-->
+		<!--<br />-->
+		<!--This is actually version 2 of my original <a href="http://www.oswd.org/design/preview/id/2540"  title="fluidity">fluidity</a> template and features some improvements and tweaks.  <br />-->
+		<!--I received a lot of emails after releasing Fluidity, it seemed very popular.  So, with this version I've tried to take the good points but expand on the original a little and make it easier to use.-->
+		<!--</p>-->
 	</div><!-- end threequartercolumn -->
 	
 	<div class="onequartercolumn">
-		<h3>List of Improvements:</h3>
-		<p>Here is a list of improvements I have made over the original Fluidity</p>
-			<ul>
-				<li>Added the <em>&quot;threequarterwidth&quot;</em> class</li>
-				<li>Navigation is easier to customise</li>
-				<li>New appearance</li>
-				<li>Extra styles for dates etc</li>
-			</ul>
+      <h3>近期消息:</h3>
+      <p>最近 Greengalaxy 活動訊息。</p>
+      <ul>
+          <% @siteMessages.each do |row| %>
+            <li style="cursor: pointer;" class="getSiteMessageByID" messageId="<%= row.id %>"><%= row.title %></li>
+          <% end %>
+      </ul>
+
+      <script>
+        <!-- Ajax 刷新顯示消息 -->
+        $('li.getSiteMessageByID').click(function(e){
+            $.ajax({url:'/home/getSiteMessageByID',data:{id:$(e.target).attr('messageId')},type:'get',success:function(r,i,a){
+                console.log(123);
+                console.log(r,i,a);
+                r.data.forEach(function(sr,si,sa){
+                    var node=$('div.onShowSiteMessage:eq(0)');
+                    node.find('h3').text(sr.title);
+                    node.find('p').text(sr.content);
+                });
+            }});
+        });
+      </script>
+		<!--<h3>List of Improvements:</h3>-->
+		<!--<p>Here is a list of improvements I have made over the original Fluidity</p>-->
+			<!--<ul>-->
+				<!--<li>Added the <em>&quot;threequarterwidth&quot;</em> class</li>-->
+				<!--<li>Navigation is easier to customise</li>-->
+				<!--<li>New appearance</li>-->
+				<!--<li>Extra styles for dates etc</li>-->
+			<!--</ul>-->
 	</div><!-- end onequartercolumn -->
 </div><!-- end rowcontainer -->
 
