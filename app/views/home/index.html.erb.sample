@@ -1,0 +1,105 @@
+<!-- 子功能標題 -->
+<%= content_for :action do %>
+	<h1 style="color: #303030;">首頁</h1>
+<% end %>
+
+<!-- 內容 -->
+<!-- <h1>Home#index</h1> -->
+
+<!-- p>Find me in app/views/home/index.html.erb</p-->
+
+<!-- 導覽列 -->
+<%= content_for :navbar do %>
+	<li><a href="" class="current">首頁</a></li>
+	<li><a href="">關於我們</a></li>
+	<li><a href="">產品型錄</a></li>
+	<li><a href="">連絡我們</a></li>
+	<!-- <li><a href="">Links</a></li>	 -->
+<% end %>
+
+<!-- 內容 -->
+<!-- ****************** BEGIN ONE COLUMN SECTION ****************** -->
+
+<div class="rowcontainer"><!-- for a row of columns, use a rowcontainer -->
+<h2>The Second Incarnation...</h2>
+	<div class="threequartercolumn">
+		<h3>The new Fluidity</h3>
+		<p>Welcome to Fluidity 2, a template created by <a href="http://www.davereederdesign.com/" title="davereederdesign">davereederdesign</a>.  
+		<br />
+		This is actually version 2 of my original <a href="http://www.oswd.org/design/preview/id/2540"  title="fluidity">fluidity</a> template and features some improvements and tweaks.  <br />
+		I received a lot of emails after releasing Fluidity, it seemed very popular.  So, with this version I've tried to take the good points but expand on the original a little and make it easier to use.		
+		</p>
+	</div><!-- end threequartercolumn -->
+	
+	<div class="onequartercolumn">
+		<h3>List of Improvements:</h3>
+		<p>Here is a list of improvements I have made over the original Fluidity</p>
+			<ul>
+				<li>Added the <em>&quot;threequarterwidth&quot;</em> class</li>
+				<li>Navigation is easier to customise</li>
+				<li>New appearance</li>
+				<li>Extra styles for dates etc</li>
+			</ul>
+	</div><!-- end onequartercolumn -->
+</div><!-- end rowcontainer -->
+
+<!-- ****************** BEGIN TWO COLUMN SECTION ****************** -->
+
+<div class="rowcontainer"><!-- for a row of columns, use a rowcontainer -->
+	<div class="halfcolumn">
+		<h3>You can have two columns...</h3>
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc purus. Nam tristique iaculis urna. Integer orci ante, placerat sit amet, porttitor quis, faucibus ac, orci. Nunc mollis auctor pede. Aliquam laoreet. Proin mattis, nisl sed porta dapibus, turpis enim tincidunt tellus, quis rhoncus dolor nunc posuere magna. Duis varius gravida erat. Proin leo nisl, consequat ac, ultricies sed, tristique at, mauris. </p>
+	</div><!-- end halfcolumn -->
+
+	<div class="halfcolumn">
+		<p>Fusce nunc ipsum, gravida non, ultrices sed, vulputate sit amet, ante. Ut vel eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+		<br />Vestibulum lectus odio, faucibus et, posuere at, luctus sed, turpis. Nunc eget nisi vitae lectus congue rhoncus. Phasellus posuere, nisi sed venenatis tempor, nunc risus laoreet metus, vel hendrerit tortor nulla et libero. Sed tincidunt dignissim metus.</p>
+	</div><!-- end halfcolumn -->
+</div><!-- end rowcontainer -->
+
+
+<!-- ****************** BEGIN THREE COLUMN SECTION ****************** -->
+
+<div class="rowcontainer"><!-- for a row of columns, use a rowcontainer -->
+	<div class="onethirdcolumn">
+		<h3>Or you can have three columns!</h3>
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc purus. Nam tristique iaculis urna. Integer orci ante, placerat sit amet, porttitor quis, faucibus ac, orci. Nunc mollis auctor pede. Aliquam laoreet. Proin mattis, nisl sed porta dapibus, turpis enim tincidunt tellus, quis rhoncus dolor nunc posuere magna. Duis varius gravida erat. Proin leo nisl, consequat ac, ultricies sed, tristique at, mauris. </p>
+	</div><!-- end onethirdcolumn -->
+
+	<div class="onethirdcolumn">
+		<h3>Or you can have three columns!</h3>
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc purus. Nam tristique iaculis urna. Integer orci ante, placerat sit amet, porttitor quis, faucibus ac, orci. Nunc mollis auctor pede. Aliquam laoreet. Proin mattis, nisl sed porta dapibus, turpis enim tincidunt tellus, quis rhoncus dolor nunc posuere magna. Duis varius gravida erat. Proin leo nisl, consequat ac, ultricies sed, tristique at, mauris.
+		<br />
+		Nunc purus. Nam tristique iaculis urna. Integer orci ante, placerat sit amet, porttitor quis, faucibus ac, orci. Nunc mollis auctor pede. </p>
+	</div><!-- end onethirdcolumn -->
+
+	<div class="onethirdcolumn">
+		<h3>Or you can have three columns!</h3>
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc purus. Nam tristique iaculis urna. Integer orci ante, placerat sit amet, porttitor quis, faucibus ac, orci. Nunc mollis auctor pede. Aliquam laoreet. Proin mattis, nisl sed porta dapibus, turpis enim tincidunt tellus, quis rhoncus dolor nunc posuere magna. Duis varius gravida erat. Proin leo nisl, consequat ac, ultricies sed, tristique at, mauris. </p>
+	</div><!-- end onethirdcolumn -->
+</div><!-- end rowcontainer -->
+
+
+
+<div class="rowcontainer"><!-- for a row of columns, use a rowcontainer -->
+	<div class="onequartercolumn">
+		<h3>Or you can have four columns...</h3>
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc purus. Nam tristique iaculis urna. Integer orci ante, placerat sit amet, porttitor quis, faucibus ac, orci. Nunc mollis auctor pede. Aliquam laoreet. Proin mattis, nisl sed porta dapibus, turpis enim tincidunt tellus, quis rhoncus dolor nunc posuere magna. Duis varius gravida erat. Proin leo nisl, consequat ac, ultricies sed, tristique at, mauris. </p>
+	</div><!-- end onequartercolumn -->
+
+	<div class="onequartercolumn">
+		<h3>Or you can have four columns...</h3>
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc purus. Nam tristique iaculis urna. Integer orci ante, placerat sit amet, porttitor quis, faucibus ac, orci. Nunc mollis auctor pede. Aliquam laoreet. Proin mattis, nisl sed porta dapibus, turpis enim tincidunt tellus, quis rhoncus dolor nunc posuere magna. Duis varius gravida erat. Proin leo nisl, consequat ac, ultricies sed, tristique at, mauris.<br />
+		Proin leo nisl, consequat ac, ultricies sed, tristique at, mauris.  </p>
+	</div><!-- end onequartercolumn -->
+
+	<div class="onequartercolumn">
+		<h3>Or you can have four columns...</h3>
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc purus. Nam tristique iaculis urna. Integer orci ante, placerat sit amet, porttitor quis, faucibus ac, orci. Nunc mollis auctor pede. Aliquam laoreet. Proin mattis, nisl sed porta dapibus, turpis enim tincidunt tellus, quis rhoncus dolor nunc posuere magna. Duis varius gravida erat. Proin leo nisl, consequat ac, ultricies sed, tristique at, mauris. </p>
+	</div><!-- end onequartercolumn -->
+
+	<div class="onequartercolumn">
+		<h3>Or you can have four columns...</h3>
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc purus. Nam tristique iaculis urna. Integer orci ante, placerat sit amet, porttitor quis, faucibus ac, orci. Nunc mollis auctor pede. Aliquam laoreet. Proin mattis, nisl sed porta dapibus, turpis enim tincidunt tellus, quis rhoncus dolor nunc posuere magna. Duis varius gravida erat. Proin leo nisl, consequat ac, ultricies sed, tristique at, mauris. </p>
+	</div><!-- end onequartercolumn -->
+</div><!-- end rowcontainer -->

@@ -46,3 +46,6 @@ end
 
 gem 'rails_admin'
 gem 'carrierwave'
+
+
+gem "devise"
