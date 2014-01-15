@@ -45,7 +45,7 @@
     </ul>
 
     <script>
-        <!-- Ajax 刷新顯示消息 -->
+        // Ajax 刷新顯示消息
         $('li.getSiteMessageByID').click(function(e){
             $.ajax({url:'/main/getSiteMessageByID',data:{id:$(e.target).attr('messageId')},type:'get',success:function(r,i,a){
                 console.log(123);
