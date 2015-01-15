@@ -39,6 +39,7 @@
     <h3>近期消息:</h3>
     <p>最近 Greengalaxy 活動訊息。</p>
     <ul>
+      <li style="cursor: pointer; padding: 5px 20px 5px 20px;" class="getSiteMessageByID">網站架構中...</li>
       <% [].each do |row| %>
           <li style="cursor: pointer; padding: 5px 20px 5px 20px;" class="getSiteMessageByID" messageId="<%= row.id %>"><%= row.title %></li>
       <% end %>
