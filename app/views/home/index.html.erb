@@ -23,7 +23,7 @@
 <div class="rowcontainer"><!-- for a row of columns, use a rowcontainer -->
   <!--<h2>最新消息</h2>-->
   <div class="threequartercolumn onShowSiteMessage news">
-    <% @siteMessages.limit(1).each do |row| %>
+    <% [].each do |row| %>
         <h3><span class="title"><%= row.title %></span><span class="created_at" style="float: right;color: whitesmoke;"><%= row.created_at.to_s[0..18] %></span></h3>
         <p><%= row.content %></p>
     <% end %>
@@ -39,7 +39,7 @@
     <h3>近期消息:</h3>
     <p>最近 Greengalaxy 活動訊息。</p>
     <ul>
-      <% @siteMessages.each do |row| %>
+      <% [].each do |row| %>
           <li style="cursor: pointer; padding: 5px 20px 5px 20px;" class="getSiteMessageByID" messageId="<%= row.id %>"><%= row.title %></li>
       <% end %>
     </ul>
